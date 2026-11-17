@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma - Laboration 1</title>
+
+    <!-- Bulma CSS via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+
+<body>
+
+    <header class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Bulma</h1>
+                <p class="subtitle">
+                    Information och utvärdering av ramverket
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigering -->
+    <nav class="section py-3">
+        <div class="container">
+            <div class="buttons">
+                <a class="button is-light" href="index.html">Hem</a>
+                <a class="button is-light" href="bootstrap.html">Bootstrap</a>
+                <a class="button is-primary" href="bulma.html">Bulma</a>
+                <a class="button is-light" href="publicering.html">Publicering</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+
+            <!-- Information om ramverket -->
+            <section class="mb-6">
+                <h2 class="title is-3">Vad är Bulma?</h2>
+                <p class="mb-4">
+                    Bulma är ett CSS-ramverk med öppen källkod
+                    som bygger på Flexbox. Ramverket erbjuder
+                    färdiga CSS-klasser för att skapa responsiva
+                    webbplatser, formulär, tabeller och andra
+                    komponenter. Bulma innehåller inte någon
+                    egen JavaScript-kod.
+                </p>
+
+                <a href="https://bulma.io/" class="button is-primary is-outlined">
+                    Bulmas officiella webbplats
+                </a>
+            </section>
+
+            <!-- Utvärdering -->
+            <section class="mb-6">
+                <h2 class="title is-3">Utvärdering av Bulma</h2>
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="box">
+                            <h3 class="title is-4">Fördelar</h3>
+                            <div class="content">
+                                <ul>
+                                    <li>Enkelt att komma igång med.</li>
+                                    <li>Tydliga och lättlästa CSS-klasser.</li>
+                                    <li>Bra stöd för responsiv design.</li>
+                                    <li>Kräver inget eget JavaScript-bibliotek.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="box">
+                            <h3 class="title is-4">Nackdelar</h3>
+                            <div class="content">
+                                <ul>
+                                    <li>Saknar färdig JavaScript-funktionalitet.</li>
+                                    <li>Mindre community än Bootstrap.</li>
+                                    <li>Vissa interaktiva komponenter kräver egen kod.</li>
+                                    <li>Unik design kan kräva egen CSS.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="title is-4 mt-5">Mina upplevelser</h3>
+                <p>
+                    Jag upplevde att Bulma var enkelt att använda
+                    eftersom många av ramverkets CSS-klasser har
+                    tydliga namn. Det var relativt enkelt att skapa
+                    tabeller, formulär och responsiva kolumner.
+                    En skillnad jämfört med Bootstrap är att Bulma
+                    inte erbjuder färdig JavaScript-funktionalitet,
+                    vilket innebär att vissa interaktiva funktioner
+                    behöver implementeras på egen hand.
+                </p>
+            </section>
+
+            <!-- Tabell -->
+            <section class="mb-6">
+                <h2 class="title is-3">Studiekurser</h2>
+
+                <div class="table-container">
+                    <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+                        <thead>
+                            <tr>
+                                <th>Kursnamn</th>
+                                <th>Ämne</th>
+                                <th>Beskrivning</th>
+                                <th>Avslutad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Webbutveckling</td>
+                                <td>IT</td>
+                                <td>Utveckling av webbplatser</td>
+                                <td>Nej</td>
+                            </tr>
+                            <tr>
+                                <td>Programmering</td>
+                                <td>IT</td>
+                                <td>Grundläggande programmering</td>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <td>Databaser</td>
+                                <td>IT</td>
+                                <td>Hantering av databaser</td>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <td>Nätverksteknik</td>
+                                <td>IT</td>
+                                <td>Kommunikation mellan datorer</td>
+                                <td>Nej</td>
+                            </tr>
+                            <tr>
+                                <td>Projektledning</td>
+                                <td>Organisation</td>
+                                <td>Planering och genomförande av projekt</td>
+                                <td>Ja</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Formulär -->
+            <section class="mb-6">
+                <h2 class="title is-3">Lägg till en kurs</h2>
+
+                <form>
+                    <div class="field">
+                        <label class="label" for="course">
+                            Kursnamn
+                        </label>
+                        <div class="control">
+                            <input class="input" type="text"
+                                   id="course" name="course" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="subject">
+                            Ämne
+                        </label>
+                        <div class="control">
+                            <div class="select is-fullwidth">
+                                <select id="subject" name="subject">
+                                    <option value="it">IT</option>
+                                    <option value="organisation">Organisation</option>
+                                    <option value="other">Övrigt</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="description">
+                            Beskrivning
+                        </label>
+                        <div class="control">
+                            <textarea class="textarea"
+                                      id="description"
+                                      name="description"
+                                      rows="4" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox"
+                                       name="completed">
+                                Kursen är avslutad
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <button type="submit" class="button is-primary">
+                                Lägg till kurs
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Laboration 1 - CSS-ramverk</p>
+        </div>
+    </footer>
+
+</body>
+</html>
