@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Laboration 1</title>
+
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="bg-primary text-white p-4">
+        <div class="container">
+            <h1>Bootstrap</h1>
+            <p>Information och utvärdering av ramverket</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand bg-light">
+        <div class="container">
+            <div class="navbar-nav flex-wrap">
+                <a class="nav-link" href="index.html">Hem</a>
+                <a class="nav-link active" href="bootstrap.html">Bootstrap</a>
+                <a class="nav-link" href="bulma.html">Bulma</a>
+                <a class="nav-link" href="publicering.html">Publicering</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+
+        <!-- Information om ramverket -->
+        <section class="mb-5">
+            <h2>Vad är Bootstrap?</h2>
+            <p>
+                Bootstrap är ett CSS-ramverk med öppen källkod som
+                används för att skapa responsiva webbplatser.
+                Ramverket erbjuder färdiga komponenter, CSS-klasser
+                och ett grid-system för att strukturera innehåll.
+            </p>
+
+            <a href="https://getbootstrap.com/" class="btn btn-outline-primary">
+                Bootstraps officiella webbplats
+            </a>
+        </section>
+
+        <!-- Utvärdering -->
+        <section class="mb-5">
+            <h2>Utvärdering av Bootstrap</h2>
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3>Fördelar</h3>
+                            <ul>
+                                <li>Enkelt att komma igång med.</li>
+                                <li>Många färdiga komponenter.</li>
+                                <li>Bra stöd för responsiv design.</li>
+                                <li>Omfattande dokumentation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3>Nackdelar</h3>
+                            <ul>
+                                <li>Webbplatser kan få ett liknande utseende.</li>
+                                <li>Det finns många CSS-klasser att lära sig.</li>
+                                <li>Ramverket innehåller kod som inte alltid behövs.</li>
+                                <li>Unik design kan kräva egen CSS.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="mt-4">Mina upplevelser</h3>
+            <p>
+                Jag upplevde att Bootstrap var relativt enkelt att
+                använda eftersom det finns färdiga klasser för
+                exempelvis tabeller, formulär och knappar.
+                Det gick snabbt att skapa en responsiv layout utan
+                att behöva skriva egen CSS. Däremot behöver man
+                lära sig vad de olika klasserna betyder.
+            </p>
+        </section>
+
+        <!-- Tabell -->
+        <section class="mb-5">
+            <h2>Studiekurser</h2>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Kursnamn</th>
+                            <th>Ämne</th>
+                            <th>Beskrivning</th>
+                            <th>Avslutad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Webbutveckling</td>
+                            <td>IT</td>
+                            <td>Utveckling av webbplatser</td>
+                            <td>Nej</td>
+                        </tr>
+                        <tr>
+                            <td>Programmering</td>
+                            <td>IT</td>
+                            <td>Grundläggande programmering</td>
+                            <td>Ja</td>
+                        </tr>
+                        <tr>
+                            <td>Databaser</td>
+                            <td>IT</td>
+                            <td>Hantering av databaser</td>
+                            <td>Ja</td>
+                        </tr>
+                        <tr>
+                            <td>Nätverksteknik</td>
+                            <td>IT</td>
+                            <td>Kommunikation mellan datorer</td>
+                            <td>Nej</td>
+                        </tr>
+                        <tr>
+                            <td>Projektledning</td>
+                            <td>Organisation</td>
+                            <td>Planering och genomförande av projekt</td>
+                            <td>Ja</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Formulär -->
+        <section class="mb-5">
+            <h2>Lägg till en kurs</h2>
+
+            <form>
+                <div class="mb-3">
+                    <label for="course" class="form-label">
+                        Kursnamn
+                    </label>
+                    <input type="text" class="form-control"
+                           id="course" name="course" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="subject" class="form-label">
+                        Ämne
+                    </label>
+                    <select class="form-select" id="subject" name="subject">
+                        <option value="it">IT</option>
+                        <option value="organisation">Organisation</option>
+                        <option value="other">Övrigt</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">
+                        Beskrivning
+                    </label>
+                    <textarea class="form-control"
+                              id="description" name="description"
+                              rows="4" required></textarea>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input"
+                           id="completed" name="completed">
+                    <label class="form-check-label" for="completed">
+                        Kursen är avslutad
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Lägg till kurs
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-light text-center p-3">
+        <p class="mb-0">Laboration 1 - CSS-ramverk</p>
+    </footer>
+
+</body>
+</html>
