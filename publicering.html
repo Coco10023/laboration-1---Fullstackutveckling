@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicering - Laboration 1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="bg-primary text-white p-4">
+        <div class="container">
+            <h1>Publicering</h1>
+            <p>Publicering av webbplatsen med GitHub Pages</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand bg-light">
+        <div class="container">
+            <div class="navbar-nav flex-wrap">
+                <a class="nav-link" href="index.html">Hem</a>
+                <a class="nav-link" href="bootstrap.html">Bootstrap</a>
+                <a class="nav-link" href="bulma.html">Bulma</a>
+                <a class="nav-link active" href="publicering.html">Publicering</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+
+        <section class="mb-5">
+            <h2>GitHub Pages</h2>
+            <p>
+                GitHub Pages är en publiceringsplattform som gör det
+                möjligt att publicera statiska webbplatser direkt från
+                ett repository på GitHub. Plattformen använder Git
+                för versionshantering och kräver inte FTP eller SFTP
+                för publicering.
+            </p>
+
+            <a href="https://pages.github.com/"
+               class="btn btn-outline-primary">
+                GitHub Pages officiella webbplats
+            </a>
+        </section>
+
+        <section class="mb-5">
+            <h2>Kodstöd</h2>
+            <p>
+                GitHub Pages har stöd för statiska webbplatser som
+                använder HTML, CSS och JavaScript. Plattformen har
+                även stöd för statiska webbplatsgeneratorer som Jekyll.
+            </p>
+            <p>
+                Däremot finns inget direkt stöd för serverbaserade
+                programmeringsspråk som PHP, Python eller C#.
+                Plattformen erbjuder inte heller någon egen databas.
+            </p>
+        </section>
+
+        <section class="mb-5">
+            <h2>Kostnad</h2>
+            <p>
+                GitHub Pages kan användas kostnadsfritt med offentliga
+                repositories. Det gör plattformen lämplig för studenter,
+                mindre webbplatser och personliga projekt.
+            </p>
+        </section>
+
+        <section class="mb-5">
+            <h2>Fördelar och nackdelar</h2>
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3>Fördelar</h3>
+                            <ul>
+                                <li>Gratis för offentliga repositories.</li>
+                                <li>Ingen FTP eller SFTP behövs.</li>
+                                <li>Integrerad versionshantering med Git.</li>
+                                <li>Automatisk publicering vid uppdateringar.</li>
+                                <li>Stöd för HTTPS.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3>Nackdelar</h3>
+                            <ul>
+                                <li>Begränsad till statiska webbplatser.</li>
+                                <li>Saknar stöd för serverbaserad kod.</li>
+                                <li>Ingen inbyggd databas.</li>
+                                <li>Kräver grundläggande kunskaper i Git
+                                    vid publicering via Git.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2>Arbetsmetod för publicering</h2>
+
+            <p>
+                Webbplatsen utvecklas lokalt i Visual Studio Code.
+                Filerna versionshanteras med Git och skickas sedan
+                till ett repository på GitHub.
+            </p>
+
+            <ol>
+                <li>Skapa ett repository på GitHub.</li>
+                <li>Skapa och redigera webbplatsens filer lokalt.</li>
+                <li>Lägg till ändringarna med git add.</li>
+                <li>Spara ändringarna med git commit.</li>
+                <li>Skicka ändringarna till GitHub med git push.</li>
+                <li>Aktivera GitHub Pages under Settings och Pages.</li>
+                <li>Välj main som publiceringsbranch.</li>
+            </ol>
+
+            <p>
+                När GitHub Pages är aktiverat publiceras webbplatsen
+                automatiskt när nya ändringar skickas till den valda
+                branchen.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="bg-light text-center p-3">
+        <p class="mb-0">Laboration 1 - CSS-ramverk</p>
+    </footer>
+
+</body>
+</html>
